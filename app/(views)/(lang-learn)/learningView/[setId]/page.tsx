@@ -31,9 +31,7 @@ const Phake: React.FC = () => {
         <Grid item md={6}>
           <Button
             fullWidth
-            onClick={() => {
-              onClickSave()
-            }}
+            onClick={onClickSave}
             endIcon={<Save />}
             sx={{ textOverflow: 'ellipsis' }}
           >

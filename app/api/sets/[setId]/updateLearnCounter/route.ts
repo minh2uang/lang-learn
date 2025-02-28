@@ -1,5 +1,5 @@
-import { getMidnightToday } from '@/app/api/cards/getNext/[setId]/route'
 import DbService from '@/app/services/DbService'
+import getMidnightToday from '@/app/utils/getMidnightTonight'
 
 export const POST = async (
   request: Request,

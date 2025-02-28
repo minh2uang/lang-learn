@@ -1,12 +1,8 @@
 import DbService, { LangLearnDatabase } from '@/app/services/DbService'
 import getNonNullUser from '@/app/services/users/getNonNullUser'
+import getMidnightToday from '@/app/utils/getMidnightTonight'
 import dayjs from 'dayjs'
 
-export const getMidnightToday = () => {
-  const d = new Date()
-  d.setHours(0, 0, 0)
-  return d
-}
 export const GET = async (
   _: Request,
   { params: { setId } }: { params: { setId: string } }
@@ -18,7 +14,7 @@ export const GET = async (
         _setId: setId,
         _createdBy: (await getNonNullUser()).email,
         nivel: { $lt: 5 },
-        dueDate: { $lt: dayjs(getMidnightToday()).add(1, 'hours').toDate() }
+        dueDate: { $lt: dayjs(getMidnightToday()).add(15, 'hour').toDate() }
       },
       {
         sort: [

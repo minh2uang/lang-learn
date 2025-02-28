@@ -23,8 +23,6 @@
     "@types/lodash": "^4.14.200",
     "bson": "^5.5.1",
     "dayjs": "^1.11.10",
-    "firebase": "^10.4.0",
-    "firebase-admin": "^11.11.0",
     "i": "^0.3.7",
     "isbot": "^3.6.8",
     "lodash": "^4.17.21",
@@ -39,7 +37,6 @@
   },
   "devDependencies": {
     "@tanstack/react-query-devtools": "^4.35.7",
-    "@types/firebase": "^3.2.1",
     "@types/node": "^20.12.7",
     "@types/react": "latest",
     "@types/react-dom": "latest",

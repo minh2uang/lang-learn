@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "standalone",
-  transpilePackages: ["@repo/shared-stuff"],
+  output: 'standalone',
+  transpilePackages: ['@repo/shared-stuff'],
   experimental: {
-    serverActions: true,
-  },
-};
+    serverActions: true
+  }
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig

@@ -1,6 +1,6 @@
 import DbService from '@/app/services/DbService'
+import getMidnightToday from '@/app/utils/getMidnightTonight'
 import dayjs from 'dayjs'
-import { getMidnightToday } from '../../getNext/[setId]/route'
 
 const getNivel = (nivel: number): number =>
   nivel > 5 ? 5 : nivel < 0 ? 0 : nivel

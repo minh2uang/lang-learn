@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import CardModel from '@/app/models/CardModel'
+import CardModel from '@/app/models/lang-learn/CardModel'
 import useForm from '@repo/shared-stuff/hooks/forms/useForm'
 import dayjs from 'dayjs'
 import { useGetUser } from '@/app/setup/UserProvider'
 import useGetRequest from '@repo/shared-stuff/hooks/queries/useGetRequest'
 import usePostRequest from '@repo/shared-stuff/hooks/queries/usePostRequest'
-import SetModel from '@/app/models/SetModel'
+import SetModel from '@/app/models/lang-learn/SetModel'
 
 type Form = {
   card: CardModel & {

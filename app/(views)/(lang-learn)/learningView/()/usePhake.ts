@@ -1,6 +1,6 @@
 import { useRouter } from 'next/navigation'
 import useGetRequest from '@repo/shared-stuff/hooks/queries/useGetRequest'
-import SetModel from '@/app/models/SetModel'
+import SetModel from '@/app/models/lang-learn/SetModel'
 import { useState } from 'react'
 import { Select } from '@repo/shared-stuff/forms/TcSelectField'
 

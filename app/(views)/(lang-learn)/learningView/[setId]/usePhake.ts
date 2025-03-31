@@ -5,8 +5,8 @@ import usePatchRequest from '@repo/shared-stuff/hooks/queries/usePatchRequest'
 import useGetRequest from '@repo/shared-stuff/hooks/queries/useGetRequest'
 import { useEffect } from 'react'
 import useDeleteRequest from '@repo/shared-stuff/hooks/queries/useDeleteRequest'
-import CardModel from '@/app/models/CardModel'
-import SetModel from '@/app/models/SetModel'
+import CardModel from '@/app/models/lang-learn/CardModel'
+import SetModel from '@/app/models/lang-learn/SetModel'
 
 export const getMidnightToday = () => {
   const d = new Date()

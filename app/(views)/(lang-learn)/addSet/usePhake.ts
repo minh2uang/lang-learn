@@ -1,7 +1,7 @@
 import useForm from '@repo/shared-stuff/hooks/forms/useForm'
 import { useGetUser } from '@/app/setup/UserProvider'
 import usePostRequest from '@repo/shared-stuff/hooks/queries/usePostRequest'
-import SetModel from '@/app/models/SetModel'
+import SetModel from '@/app/models/lang-learn/SetModel'
 
 interface Form {
   name: string

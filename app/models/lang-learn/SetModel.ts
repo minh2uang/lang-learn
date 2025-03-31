@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { DocumentId } from './Zod'
+import { DocumentId } from '../Zod'
 
 const SetModel = z.object({
   _id: DocumentId,

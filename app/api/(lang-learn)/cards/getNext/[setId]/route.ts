@@ -1,4 +1,4 @@
-import DbService, { LangLearnDatabase } from '@/app/services/DbService'
+import DbService from '@/app/services/DbService'
 import getNonNullUser from '@/app/services/users/getNonNullUser'
 import dayjs from 'dayjs'
 

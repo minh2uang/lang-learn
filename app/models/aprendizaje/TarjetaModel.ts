@@ -24,10 +24,7 @@ const TarjetaModel = z.object({
     efactor: 2.5,
     repetition: 0
   }),
-  dueDate: z
-    .string()
-    .default('')
-    .transform((i) => (i ? new Date(i) : new Date()))
+  dueDate: z.date().nullable().default(null)
 })
 
 type TarjetaModel = z.infer<typeof TarjetaModel>

@@ -1,12 +1,12 @@
-"use client";
-import React from "react";
-import { AppBar, Toolbar, Box, Typography, Button, Grid } from "@mui/material";
-import { useRouter } from "next/navigation";
-import UserContextProvider from "@/app/setup/UserProvider";
-type Props = { children: JSX.Element };
+'use client'
+import React from 'react'
+import { AppBar, Toolbar, Box, Typography, Button, Grid } from '@mui/material'
+import { useRouter } from 'next/navigation'
+import UserContextProvider from '@/app/setup/UserProvider'
+type Props = { children: JSX.Element }
 
 const Layout = ({ children }: Props) => {
-  const router = useRouter();
+  const router = useRouter()
 
   return (
     <UserContextProvider>
@@ -18,18 +18,26 @@ const Layout = ({ children }: Props) => {
             </Box>
             <Box ml={5} />
             <Button
-              onClick={() => router.push("/learningView")}
+              onClick={() => router.push('/learningView')}
               variant="text"
-              sx={{ color: "white" }}
+              sx={{ color: 'white' }}
             >
               Study Zone
             </Button>
             <Button
-              onClick={() => router.push("/addCard")}
+              onClick={() => router.push('/addCard')}
               variant="text"
-              sx={{ color: "white" }}
+              sx={{ color: 'white' }}
             >
               Add Card
+            </Button>
+
+            <Button
+              onClick={() => router.push('/aprendizaje/tarjetaGrupoList')}
+              variant="text"
+              sx={{ color: 'white' }}
+            >
+              Aprendizaje
             </Button>
           </Toolbar>
         </AppBar>
@@ -42,7 +50,7 @@ const Layout = ({ children }: Props) => {
         </Grid>
       </>
     </UserContextProvider>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

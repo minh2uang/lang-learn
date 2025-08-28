@@ -3,13 +3,7 @@ import { useParams, useRouter } from 'next/navigation'
 import useDeleteRequest from '@repo/shared-stuff/hooks/queries/useDeleteRequest'
 import useGetRequest from '@repo/shared-stuff/hooks/queries/useGetRequest'
 import { SetModelClient } from '@/app/models/lang-learn/SetModel'
-import { CardModelClient } from '@/app/models/lang-learn/CardModel'
 import usePatchRequest from '@repo/shared-stuff/hooks/queries/usePatchRequest'
-
-interface Form {
-  name: string
-  description: string
-}
 
 const usePhake = () => {
   const { setId } = useParams()

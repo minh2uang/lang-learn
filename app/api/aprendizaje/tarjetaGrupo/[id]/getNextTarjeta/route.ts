@@ -4,8 +4,9 @@ export const GET = genericFunction<{ id: string }, null>(async (params) => {
   const toReview = await findOne(
     'tarjetas',
     {
-      'reviewLog.dueDate': { $lt: new Date() },
-      'reviewLog.repetition': { $not: 0 }
+      dueDate: { $lt: new Date() },
+      'reviewLog.repetition': { $ne: 0 },
+      _tarjetaGrupoId: params.id
     },
     { sort: [['reviewLog.dueDate', 'asc']] }
   )
@@ -17,7 +18,8 @@ export const GET = genericFunction<{ id: string }, null>(async (params) => {
   const toLearn = await findOne(
     'tarjetas',
     {
-      'reviewLog.repetition': 0
+      dueDate: null,
+      _tarjetaGrupoId: params.id
     },
     {
       sort: [['_createdAt', 'asc']]

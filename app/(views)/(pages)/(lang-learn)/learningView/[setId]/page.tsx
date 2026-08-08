@@ -5,7 +5,7 @@ import { Box, Button, Grid, Typography } from '@mui/material'
 import { Save } from '@mui/icons-material'
 import Delete from '@mui/icons-material/Delete'
 import useLearningView from './usePhake'
-import YoutubeField from '@/app/components/YoutubeField'
+import YoutubeField from '@/app/components/Index'
 
 const Phake: React.FC = () => {
   const {

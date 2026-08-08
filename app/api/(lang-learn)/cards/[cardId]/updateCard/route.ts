@@ -27,6 +27,8 @@ export const PATCH = async (
       {
         $set: {
           nivel: getNivel(card.nivel + 1),
+          start: card.start,
+          end: card.end,
           dueDate:
             card.nivel + 1 <= 5 ? dayjs().add(20, 'hours').toDate() : null
         }

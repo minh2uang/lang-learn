@@ -26,14 +26,14 @@
     "i": "^0.3.7",
     "isbot": "^3.6.8",
     "lodash": "^4.17.21",
+    "mongodb": "^5.9.2",
     "nanoid": "^5.0.2",
-    "next": "13.4.19",
+    "next": "16.1.6",
     "npm": "^10.9.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-youtube": "^10.1.0",
     "supermemo": "^2.0.23",
-    "typeorm": "^0.3.20",
     "zod": "^3.21.4"
   },
   "devDependencies": {
